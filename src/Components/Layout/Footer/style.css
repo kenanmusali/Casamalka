@@ -1,0 +1,38 @@
+.footerLogo {
+    height: 2rem;
+}
+
+.divFooterSection {
+    border-right: 1px solid var(--color2);
+    width: 33%;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.Footerlast {
+    border: none;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    gap: 5rem;
+    width: 33%;
+}
+
+.divFooter {
+    display: flex;
+}
+
+.divFooterMenuSecion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.HeadFooter {
+    font-weight: 600;
+}

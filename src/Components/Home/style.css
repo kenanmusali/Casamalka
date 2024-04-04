@@ -111,7 +111,9 @@
     -o-transition: all 0.4s;
 }
 
-.button:hover, .button1:hover {
+
+.button:hover,
+.button1:hover {
     background-color: var(--color4);
     border: 1px solid var(--color4);
     color: var(--color1);
@@ -143,8 +145,66 @@
 }
 
 
-.divHomeProduct{
+.divHomeProduct {
     display: flex;
     width: fit-content;
     gap: 4rem;
+}
+
+.divAboutProduct {
+    outline: 1px solid var(--color2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70rem;
+}
+
+.divAboutProduct2 {
+    outline: 1px solid var(--color2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80.05rem;
+}
+
+.divAboutProduct1 {
+    outline: 1px solid var(--color2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 3rem;
+}
+
+.divAboutProduct1 p {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.Image1 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 54.8rem;
+    height: 70rem;
+    outline: 1px solid var(--color2);
+}
+
+.Image2 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80.05rem;
+    outline: 1px solid var(--color2);
+}
+
+.divAboutProduct p {
+    font-size: 4vw;
+    margin: 3rem;
+
+}
+
+.divAboutProduct2 p {
+    font-size: 4vw;
+    margin: 3rem;
+
 }

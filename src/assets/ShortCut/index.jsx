@@ -3,7 +3,7 @@ import './style.css'
 
 function ShortCut() {
   return (
-    <div>ShortCut</div>
+    <div></div>
   )
 }
 

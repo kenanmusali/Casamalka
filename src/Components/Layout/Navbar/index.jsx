@@ -8,7 +8,7 @@ function Navbar() {
     <div>
       <div className="navbarSection">
         <Link to='/' className="divNavGroupSec">
-          <img src={logo} alt="mellons" />
+          <img src={logo} alt="Flow" />
         </Link>
         <div className="divNavGroupSec">
           <div className="divLink">
