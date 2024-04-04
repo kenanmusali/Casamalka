@@ -1,20 +1,150 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .divHomeSection {
     position: relative;
-    height: 100vh;
-    width: 100%;
+    height: 95.5vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image:  url(../../../public/Background/Final.png);
+    overflow: hidden;
+    margin-inline: 2.5rem;
+    border-radius: 20px;
+    outline: 1px solid var(--color2);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-size: cover;
+    transition: background-image 1s ease;
 }
 
-.divHomeSection p {
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    font-size: 15rem;
-    margin-left: 2rem;
+.divHomeSection.change-bg {
+    transition: background-image 1s ease;
+}
+
+.divHomeSection.bg1 {
+    background-image: url(../../../public/Background/Final1.png);
+}
+
+.divHomeSection.bg2 {
+    background-image: url(../../../public/Background/Final2.png);
+}
+
+.divProductsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 1px solid var(--color2);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-inline: 2.5rem;
+    padding: 4rem 1.5rem;
+}
+
+.divProductsSection .ProductsWaterName {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.divProducAbout {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border: 1px solid var(--color2);
+    padding: 0.5rem;
+}
+
+.divProducAbout .video {
+    height: 25rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 0.8rem;
+}
+
+.divDataProducts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-inline: 0.5rem;
+}
+
+.divDataProducts .WaterName {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.divDataProducts .WaterMl {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.button {
+    height: 3.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: none;
+    margin-top: 1rem;
+    border: 1px solid var(--color2);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.button:hover, .button1:hover {
+    background-color: var(--color4);
+    border: 1px solid var(--color4);
     color: var(--color1);
-    user-select: none;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.button1 {
+    height: 3.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: var(--color2);
+    color: var(--color1);
+    margin-top: 0.5rem;
+    border: 1px solid var(--color2);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+
+.divHomeProduct{
+    display: flex;
+    width: fit-content;
+    gap: 4rem;
 }
