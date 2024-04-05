@@ -55,6 +55,16 @@
         height: 10rem;
     }
 
+    .FooterFirst, .FooterMiddle {
+border-right: none;
+    }
+
+    .Footerlast {
+        display: flex;
+        align-items: flex-end;
+        justify-content: left;
+    }
+
 
 }
 

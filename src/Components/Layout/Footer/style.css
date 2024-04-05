@@ -18,12 +18,14 @@
     flex-direction: row;
     align-items: center;
     display: flex;
-    gap: 5rem;
+    gap: 3vw;
     width: 33%;
 }
 
 .divFooter {
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .divFooterMenuSecion {
@@ -77,4 +79,15 @@ section {
 .parallax span {
   display: block;
   margin-right: 30px;
+}
+
+.FooterMiddle {
+  width: 33%;
+}
+
+.Footerlast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
 }

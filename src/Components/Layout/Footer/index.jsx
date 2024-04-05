@@ -78,7 +78,7 @@ export default function Footer() {
             <p>Reseler</p>
           </div>
           <div className="divFooterMenuSecion">
-            <p className='HeadFooter'>MORE INFO</p>
+            <p className='HeadFooter'>INFO</p>
             <p>Privacy Policy</p>
             <p>Term of Use</p>
             <p>See Faq</p>
