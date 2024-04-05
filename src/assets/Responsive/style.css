@@ -55,8 +55,9 @@
         height: 10rem;
     }
 
-    .FooterFirst, .FooterMiddle {
-border-right: none;
+    .FooterFirst,
+    .FooterMiddle {
+        border-right: none;
     }
 
     .Footerlast {
@@ -66,6 +67,9 @@ border-right: none;
     }
 
 
+    .navbarSection img {
+        margin-left: 0rem;
+    }
 }
 
 /* Laptop */
