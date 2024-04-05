@@ -11,7 +11,7 @@ function Navbar() {
           <img src={logo} alt="Flow" />
         </Link>
         <div className="divNavGroupSec">
-          <div className="divLink">
+          <div className="divLink LinkFist"> 
             <NavLink className="nav" to='/products'>PRODUCTS</NavLink>
           </div>
           <div className="divLink">

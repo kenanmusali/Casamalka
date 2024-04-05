@@ -6,18 +6,12 @@
 
 .divHomeSection {
     position: relative;
-    height: 95.5vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    margin-inline: 2.5rem;
-    border-radius: 20px;
     outline: 1px solid var(--color2);
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
     background-size: cover;
     transition: background-image 1s ease;
 }
@@ -39,12 +33,6 @@
     flex-direction: column;
     align-items: center;
     outline: 1px solid var(--color2);
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    margin-inline: 2.5rem;
     padding: 4rem 1.5rem;
 }
 
@@ -56,22 +44,12 @@
 .divProducAbout {
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
     border: 1px solid var(--color2);
     padding: 0.5rem;
 }
 
 .divProducAbout .video {
-    height: 25rem;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    height: 28vw;
     margin-bottom: 0.8rem;
 }
 
@@ -94,14 +72,9 @@
 
 .button {
     height: 3.5rem;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
     background: none;
     margin-top: 1rem;
-    border: 1px solid var(--color2);
+    border: 2px dotted var(--color2);
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.4s;
@@ -126,11 +99,6 @@
 
 .button1 {
     height: 3.5rem;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
     background-color: var(--color2);
     color: var(--color1);
     margin-top: 0.5rem;
@@ -147,8 +115,9 @@
 
 .divHomeProduct {
     display: flex;
-    width: fit-content;
-    gap: 4rem;
+ justify-content: center;
+    width: 100%;
+    gap: 3rem;
 }
 
 .divAboutProduct {
@@ -156,7 +125,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70rem;
+    height: fit-content;
 }
 
 .divAboutProduct2 {
@@ -164,7 +133,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80.05rem;
+height: fit-content;
 }
 
 .divAboutProduct1 {
@@ -176,7 +145,7 @@
 }
 
 .divAboutProduct1 p {
-    font-size: 2vw;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -184,8 +153,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 54.8rem;
-    height: 70rem;
+    width: 54.7vw;
     outline: 1px solid var(--color2);
 }
 
@@ -193,7 +161,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80.05rem;
+    width: 47.7vw;
     outline: 1px solid var(--color2);
 }
 
@@ -207,4 +175,10 @@
     font-size: 4vw;
     margin: 3rem;
 
+}
+
+.SectionHome {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--color1);
 }

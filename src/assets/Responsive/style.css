@@ -1,0 +1,62 @@
+/* Phone */
+@media screen and (max-width: 767px) {}
+
+/* Tablet */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+
+    .navbarSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divNavGroupSec {
+        display: flex;
+        justify-content: center;
+        background-color: var(--color1);
+        width: 100%;
+        margin-top: 0.55rem;
+
+    }
+
+    .divNavGroupSec .nav {
+        white-space: nowrap;
+
+    }
+
+    .divLink {
+        border-bottom: 1px solid var(--color2);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 3vw;
+    }
+
+    .LinkFist {
+        border-left: none;
+    }
+
+    .divFooter {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .divFooterSection {
+        width: 100%;
+        border-bottom: 1px solid var(--color2);
+    }
+
+    .FooterFirst p {
+        width: 25rem;
+    }
+
+    .FooterMiddle {
+        height: 10rem;
+    }
+
+
+}
+
+/* Laptop */
+@media screen and (min-width: 1024px) {}
