@@ -1,5 +1,158 @@
 /* Phone */
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+
+    .navbarSection {
+        display: block;
+        height: 4rem;
+    }
+
+    .divNavGroupSec0 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color1);
+        margin-top: 1.2rem;
+        width: 100%;
+    }
+
+    .divNavGroupSec00 {
+        width: 100%;
+        background-color: var(--color1);
+        margin-top: 1.2rem;
+
+    }
+
+    .divNavGroupSec .nav {
+        white-space: nowrap;
+
+    }
+
+    .divAboutProduct,
+    .divAboutProduct2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Image1,
+    .Image2 {
+        width: 100%;
+    }
+
+    .divLink {
+        border-bottom: 1px solid var(--color2);
+        width: 100%;
+        height: 12.5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 3vw;
+    }
+
+    .divNavGroupSec .nav {
+        font-size: 1.5rem;
+    }
+
+    .LinkFist {
+        border-left: none;
+    }
+
+    .divFooter {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .divFooterSection {
+        width: 100%;
+        border-bottom: 1px solid var(--color2);
+    }
+
+    .FooterFirst p {
+        width: auto;
+    }
+
+    .FooterMiddle {
+        height: 13rem;
+    }
+
+    .FooterFirst,
+    .FooterMiddle {
+        border-right: none;
+    }
+
+    .Footerlast {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        
+    }
+
+
+    .navbarSection img {
+        margin-left: 0rem;
+    }
+
+    .divHomeProduct {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .divNavGroupSec {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .divNavGroupSec0 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 2rem;
+    }
+
+    .DragHandleIcon {
+        font-size: 1.2rem !important;
+        color: var(--color2);
+    }
+
+    .divNavGroupSec0 {
+        z-index: 6;
+    }
+      
+      .divNavGroupSec {
+        animation: fadeInOut 0.5s ease;
+      }
+      
+      @keyframes fadeInOut {
+        0% {
+          opacity: 0;
+          transform: translateY(-60rem);
+          -webkit-transform: translateY(-60rem);
+          -moz-transform: translateY(-60rem);
+          -ms-transform: translateY(-60rem);
+          -o-transform: translateY(-60rem);
+}
+        50% {
+          opacity: 0.5;
+          transform: translateY(60px);
+          -webkit-transform: translateY(60px);
+          -moz-transform: translateY(60px);
+          -ms-transform: translateY(60px);
+          -o-transform: translateY(60px);
+}
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+          -webkit-transform: translateY(0);
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -o-transform: translateY(0);
+}
+      }
+      
+
+}
 
 /* Tablet */
 @media screen and (min-width: 767px) and (max-width: 1024px) {
@@ -52,7 +205,7 @@
     }
 
     .FooterMiddle {
-        height: 10rem;
+        height: 13rem;
     }
 
     .FooterFirst,
@@ -70,7 +223,22 @@
     .navbarSection img {
         margin-left: 0rem;
     }
+
+    .divHomeProduct {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .DragHandleIcon {
+        display: none !important;
+    }
+
 }
 
 /* Laptop */
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .DragHandleIcon {
+        display: none !important;
+    }
+}

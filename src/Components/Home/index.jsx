@@ -53,7 +53,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
     baseX.set(baseX.get() + moveBy);
   });
-  
+
   return (
     <div className="parallax">
       <motion.div className="scroller" style={{ x }}>
@@ -88,51 +88,72 @@ function HomeSection() {
 
     return () => clearTimeout(timer);
   }, [bgIndex]);
+  
 
   return (
     <div className='Home'>
       <div className={`divHomeSection bg${bgIndex}`}>
-      <section className='SectionHome'>
-      <ParallaxText baseVelocity={-5}>ALKALINE SPRING WATER ALKALINE SPRING WATER </ParallaxText>
-  
-    </section> 
+        <section className='SectionHome'>
+          <ParallaxText baseVelocity={-5}>ALKALINE SPRING WATER ALKALINE SPRING WATER </ParallaxText>
+        </section>
       </div>
       <div className="divProductsSection">
         <p className='ProductsWaterName'>PRODUCTS</p>
         <div className="divHomeProduct">
+          
           <div className="divProducAbout">
             <video className='video' muted autoPlay loop>
               <source src="/Video/video3.mp4" type="video/mp4" />
             </video>
             <div className="divDataProducts">
-              <p className='WaterName'>Flow Water</p>
               <p className='WaterMl'>330 ML</p>
+              <p className='WaterName'>Flow Water</p>
             </div>
-            <button className='button' type="button">Details</button>
-            <button className='button1' type="button">Add To Basket</button>
+            <div className="divButtonGroupSec">
+              <button className='button' type="button">Details</button>
+              <button className='button' type="button">Add To Basket</button>
+            </div>
           </div>
           <div className="divProducAbout">
             <video className='video' muted autoPlay loop>
               <source src="/Video/video2.mp4" type="video/mp4" />
             </video>
             <div className="divDataProducts">
-              <p className='WaterName'>Flow Water</p>
               <p className='WaterMl'>330 ML</p>
+              <p className='WaterName'>Flow Water</p>
             </div>
-            <button className='button' type="button">Details</button>
-            <button className='button1' type="button">Add To Basket</button>
+            <div className="divButtonGroupSec">
+              <button className='button' type="button">Details</button>
+              <button className='button' type="button">Add To Basket</button>
+            </div>
           </div>
           <div className="divProducAbout">
             <video className='video' muted autoPlay loop>
               <source src="/Video/video1.mp4" type="video/mp4" />
             </video>
             <div className="divDataProducts">
-              <p className='WaterName'>Flow Water</p>
               <p className='WaterMl'>330 ML</p>
+              <p className='WaterName'>Flow Water</p>
             </div>
-            <button className='button' type="button">Details</button>
-            <button className='button1' type="button">Add To Basket</button>
+            <div className="divButtonGroupSec">
+              <button className='button' type="button">Details</button>
+              <button className='button' type="button">Add To Basket</button>
+            </div>
           </div>
+          <div className="divProducAbout">
+            <video className='video' muted autoPlay loop>
+              <source src="/Video/video2.mp4" type="video/mp4" />
+            </video>
+            <div className="divDataProducts">
+              <p className='WaterMl'>330 ML</p>
+              <p className='WaterName'>Flow Water</p>
+            </div>
+            <div className="divButtonGroupSec">
+              <button className='button' type="button">Details</button>
+              <button className='button' type="button">Add To Basket</button>
+            </div>
+          </div>
+          
         </div>
       </div>
       <div className="divAboutProduct">

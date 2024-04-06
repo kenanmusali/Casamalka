@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: center;
     outline: 1px solid var(--color2);
-    padding: 4rem 1.5rem;
+    padding: 4rem 0rem;
 }
 
 .divProductsSection .ProductsWaterName {
@@ -43,38 +43,68 @@
 
 .divProducAbout {
     display: flex;
-    flex-direction: column;
-    border: 1px solid var(--color2);
-    padding: 0.5rem;
+    position: relative;
+    outline: 1px solid var(--color2);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    height: fit-content;
+}
+
+.divProducAbout:hover .divButtonGroupSec {
+    display: flex;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
 }
 
 .divProducAbout .video {
-    height: 28vw;
-    margin-bottom: 0.8rem;
+    width: 100%;
 }
 
 .divDataProducts {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding-inline: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(20px);
+    width: 100%;
+    padding: 0.7rem 0.7rem;
+}
+
+.divButtonGroupSec {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    bottom: 0;
+    display: none;
 }
 
 .divDataProducts .WaterName {
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color2);
 }
 
 .divDataProducts .WaterMl {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 400;
+    color: var(--color2);
 }
 
 .button {
-    height: 3.5rem;
+    height: 5rem;
     background: none;
-    margin-top: 1rem;
-    border: 2px dotted var(--color2);
+    outline: 1px solid var(--color2);
+    background-color: var(--color1);
+    border: none;
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.4s;
@@ -85,39 +115,24 @@
 }
 
 
-.button:hover,
-.button1:hover {
-    background-color: var(--color4);
-    border: 1px solid var(--color4);
-    color: var(--color1);
-    transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -ms-transition: all 0.4s;
-    -o-transition: all 0.4s;
-}
-
-.button1 {
-    height: 3.5rem;
+.button:hover {
     background-color: var(--color2);
+    outline: 1px solid var(--color2);
     color: var(--color1);
-    margin-top: 0.5rem;
-    border: 1px solid var(--color2);
-    font-size: 1rem;
-    cursor: pointer;
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     -ms-transition: all 0.4s;
     -o-transition: all 0.4s;
 }
+
+
 
 
 .divHomeProduct {
     display: flex;
- justify-content: center;
+    justify-content: center;
     width: 100%;
-    gap: 3rem;
 }
 
 .divAboutProduct {
@@ -133,7 +148,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-height: fit-content;
+    height: fit-content;
 }
 
 .divAboutProduct1 {
