@@ -85,7 +85,7 @@ function HomeSection() {
     <div className='Home'>
       <div className={`divHomeSection bg${bgIndex}`}>
         <section className='SectionHome'>
-          <ParallaxText baseVelocity={-5}>CASA MALKA TEQUILA CASA MALKA TEQUILA</ParallaxText>
+          <ParallaxText baseVelocity={-5}>CASA MALKA TEQUILA 100 PERCENT AGAVE AZUL</ParallaxText>
         </section>
       </div>
       <div className="divProductsSection">
