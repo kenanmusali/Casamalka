@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: center;
     outline: 1px solid var(--color2);
-    padding: 4rem 0rem;
+    padding: 4rem 0rem 0rem 0rem;
 }
 
 .divProductsSection .ProductsWaterName {
@@ -51,6 +51,12 @@
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
     height: fit-content;
+}
+
+.divPriceProducts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .divProducAbout:hover .divButtonGroupSec {

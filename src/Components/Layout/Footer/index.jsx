@@ -1,6 +1,6 @@
 import "./style.css";
 import React from 'react'
-import logo from '../../../../public/Logo/Flow-logo.svg'
+import logo from '../../../../public/Logo/casamalka-logo.svg'
 import { useRef } from "react";
 import {
   motion,
@@ -65,7 +65,7 @@ export default function Footer() {
           <p>We make products with minimal environmental impact
             that keep you hydrated when you are far away from the tap.
           </p>
-          ©Flow, 2024. All Right Reserved,
+          ©Casamalka, 2024. All Right Reserved,
           <p>
           </p>
         </div>
@@ -93,7 +93,7 @@ export default function Footer() {
       </div>
    
     <section>
-      <ParallaxText baseVelocity={-5}>Drink Water Drink Water Drink Water</ParallaxText>
+      <ParallaxText baseVelocity={-5}>WELCOME TO THE QUEENDOOM WELCOME TO THE QUEENDOOM</ParallaxText>
 
     </section> 
     </div>

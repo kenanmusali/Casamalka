@@ -28,21 +28,12 @@ function ParallaxText({ children, baseVelocity = 100 }) {
     clamp: false
   });
 
-  /**
-   * This is a magic wrapping for the length of the text - you
-   * have to replace for wrapping that works for you or dynamically
-   * calculate
-   */
   const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
 
   const directionFactor = useRef(1);
   useAnimationFrame((t, delta) => {
     let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
-    /**
-     * This is what changes the direction of the scroll once we
-     * switch scrolling directions.
-     */
     if (velocityFactor.get() < 0) {
       directionFactor.current = -1;
     } else if (velocityFactor.get() > 0) {
@@ -94,7 +85,7 @@ function HomeSection() {
     <div className='Home'>
       <div className={`divHomeSection bg${bgIndex}`}>
         <section className='SectionHome'>
-          <ParallaxText baseVelocity={-5}>ALKALINE SPRING WATER ALKALINE SPRING WATER </ParallaxText>
+          <ParallaxText baseVelocity={-5}>CASA MALKA TEQUILA CASA MALKA TEQUILA</ParallaxText>
         </section>
       </div>
       <div className="divProductsSection">
@@ -103,24 +94,14 @@ function HomeSection() {
           
           <div className="divProducAbout">
             <video className='video' muted autoPlay loop>
-              <source src="/Video/video3.mp4" type="video/mp4" />
+              <source src="/Video/video1.mp4" type="video/mp4" />
             </video>
             <div className="divDataProducts">
               <p className='WaterMl'>330 ML</p>
-              <p className='WaterName'>Flow Water</p>
-            </div>
-            <div className="divButtonGroupSec">
-              <button className='button' type="button">Details</button>
-              <button className='button' type="button">Add To Basket</button>
-            </div>
-          </div>
-          <div className="divProducAbout">
-            <video className='video' muted autoPlay loop>
-              <source src="/Video/video2.mp4" type="video/mp4" />
-            </video>
-            <div className="divDataProducts">
-              <p className='WaterMl'>330 ML</p>
-              <p className='WaterName'>Flow Water</p>
+              <div className="divPriceProducts">
+              <p className='WaterName'>Casa Malka Tequila</p>
+              <p className='WaterMl'>$50.23</p>
+              </div>
             </div>
             <div className="divButtonGroupSec">
               <button className='button' type="button">Details</button>
@@ -133,7 +114,10 @@ function HomeSection() {
             </video>
             <div className="divDataProducts">
               <p className='WaterMl'>330 ML</p>
-              <p className='WaterName'>Flow Water</p>
+              <div className="divPriceProducts">
+              <p className='WaterName'>Casa Malka Tequila</p>
+              <p className='WaterMl'>$50.23</p>
+              </div>
             </div>
             <div className="divButtonGroupSec">
               <button className='button' type="button">Details</button>
@@ -142,11 +126,30 @@ function HomeSection() {
           </div>
           <div className="divProducAbout">
             <video className='video' muted autoPlay loop>
-              <source src="/Video/video2.mp4" type="video/mp4" />
+              <source src="/Video/video1.mp4" type="video/mp4" />
             </video>
             <div className="divDataProducts">
               <p className='WaterMl'>330 ML</p>
-              <p className='WaterName'>Flow Water</p>
+              <div className="divPriceProducts">
+              <p className='WaterName'>Casa Malka Tequila</p>
+              <p className='WaterMl'>$50.23</p>
+              </div>
+            </div>
+            <div className="divButtonGroupSec">
+              <button className='button' type="button">Details</button>
+              <button className='button' type="button">Add To Basket</button>
+            </div>
+          </div>
+          <div className="divProducAbout">
+            <video className='video' muted autoPlay loop>
+              <source src="/Video/video1.mp4" type="video/mp4" />
+            </video>
+            <div className="divDataProducts">
+              <p className='WaterMl'>330 ML</p>
+              <div className="divPriceProducts">
+              <p className='WaterName'>Casa Malka Tequila</p>
+              <p className='WaterMl'>$50.23</p>
+              </div>
             </div>
             <div className="divButtonGroupSec">
               <button className='button' type="button">Details</button>
@@ -157,15 +160,15 @@ function HomeSection() {
         </div>
       </div>
       <div className="divAboutProduct">
-        <p>A Flow® plastic has a 18% lower climate impact throughout its entire lifecycle compared to a typical plastic bottle made from 100% recycled plastic.[1]</p>
+        <p>Wild Agave Americana plants from India’s Deccan are carefully sorted through and the mature ones that have reached 8 to 10 years are selected.</p>
         <img className='Image1' src={Image1} />
       </div>
       <div className="divAboutProduct1">
-        <p>[1] The life cycle assessment of Postevand was conducted by Anthesis, the world's largest group of dedicated sustainability experts. The assessment report has undergone third-party review and was performed in compliance with ISO standards 14040 and 14044</p>
+        <p>You wake from a dream, and you listen. The desert, at first, is silent. A hummingbird lands on a cactus flower, its fluffy yellow blossoms pushing out from thorny skin. Here, it's only you, the rock-laden earth, the birds, and the agave, who at once cling tightly to the soil and reach their thin arms up towards the sun.</p>
       </div>
       <div className="divAboutProduct2">
         <img className='Image2' src={Image2} />
-        <p>Lifecycle study results: Proven better</p>
+        <p>Aged Agave spirit from various casks is blended, non-chill filtered and bottled. No artificial additives or coloring agents are used.</p>
       </div>
     </div>
   );

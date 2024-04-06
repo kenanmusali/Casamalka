@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './style.css'
-import logo from '../../../../public/Logo/Flow-logo.svg'
+import logo from '../../../../public/Logo/casamalka-logo.svg'
 import { Link, NavLink } from 'react-router-dom'
 
 function Navbar() {
