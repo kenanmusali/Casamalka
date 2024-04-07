@@ -14,11 +14,11 @@ function Navbar() {
     const handleResize = () => {
       setIsOpen(window.innerWidth >= 767);
     };
-    
+
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-  
+
   return (
     <div>
       <div className="navbarSection">
@@ -29,25 +29,26 @@ function Navbar() {
 
         {isOpen && (
           <div className="divNavGroupSec divNavGroupSec00">
-            <div className="divLink LinkFist">
-              <NavLink className="nav" to='/products'>PRODUCTS</NavLink>
-            </div>
-            <div className="divLink">
-              <NavLink className="nav" to='/contact'>CONTACT</NavLink>
-            </div>
-            <div className="divLink">
-              <NavLink className="nav" to='/contact'>RESELER</NavLink>
-            </div>
-            <div className="divLink">
-              <NavLink className="nav" to='/contact'>NEWS</NavLink>
-            </div>
-            <div className="divLink">
-              <NavLink className="nav" to='/contact'>FAQ</NavLink>
-            </div>
-            <div className="divLink LinkLast">
-              <NavLink className="nav" to='/contact'>BAG (0)</NavLink>
-            </div>
+            <NavLink className="divLink LinkFist" to='/products' activeClassName="active">
+              <div className="nav">PRODUCTS</div>
+            </NavLink>
+            <NavLink className="divLink" to='/contact' activeClassName="active">
+              <div className="nav">CONTACT</div>
+            </NavLink>
+            <NavLink className="divLink" to='/reseller' activeClassName="active">
+              <div className="nav">RESELLER</div>
+            </NavLink>
+            <NavLink className="divLink" to='/news' activeClassName="active">
+              <div className="nav">NEWS</div>
+            </NavLink>
+            <NavLink className="divLink" to='/faq' activeClassName="active">
+              <div className="nav">FAQ</div>
+            </NavLink>
+            <NavLink className="divLink LinkLast" to='/bag' activeClassName="active">
+              <div className="nav">BAG (0)</div>
+            </NavLink>
           </div>
+
         )}
       </div>
     </div >
