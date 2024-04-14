@@ -5,50 +5,58 @@ import { Link, NavLink } from 'react-router-dom'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(window.innerWidth >= 767);
+  const [menuText, setMenuText] = useState('Menu'); 
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    if (window.innerWidth < 767) {
+      setIsOpen(!isOpen);
+      setMenuText(isOpen ? 'Menu' : 'Close'); 
+    }
   };
+  
 
   useEffect(() => {
     const handleResize = () => {
       setIsOpen(window.innerWidth >= 767);
+      setMenuText(window.innerWidth >= 767 ? 'Menu' : 'Close'); 
     };
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+
   return (
     <div>
       <div className="navbarSection">
-        <Link to='/' className="divNavGroupSec divNavGroupSec0">
-          <img src={logo} alt="Flow" />
-          <p onClick={toggleMenu} className='DragHandleIcon' > Menu</p>
-        </Link>
+        <div className="divNavGroupSec divNavGroupSec0">
+          <Link to='/'>
+            <img src={logo} alt="Flow" />
+          </Link>
+          <p onClick={toggleMenu} className='DragHandleIcon'>{menuText}</p>
+        </div>
 
         {isOpen && (
           <div className="divNavGroupSec divNavGroupSec00">
-            <NavLink className="divLink LinkFist" to='/products' activeClassName="active">
+            <NavLink onClick={toggleMenu} className="divLink LinkFist" to='/products' activeClassName="active">
               <div className="nav">PRODUCTS</div>
             </NavLink>
-            <NavLink className="divLink" to='/contact' activeClassName="active">
+            <NavLink onClick={toggleMenu} className="divLink" to='/contact' activeClassName="active">
               <div className="nav">CONTACT</div>
             </NavLink>
-            <NavLink className="divLink" to='/reseller' activeClassName="active">
+            <NavLink onClick={toggleMenu} className="divLink" to='/reseller' activeClassName="active">
               <div className="nav">RESELLER</div>
             </NavLink>
-            <NavLink className="divLink" to='/news' activeClassName="active">
+            <NavLink onClick={toggleMenu} className="divLink" to='/news' activeClassName="active">
               <div className="nav">NEWS</div>
             </NavLink>
-            <NavLink className="divLink" to='/faq' activeClassName="active">
+            <NavLink onClick={toggleMenu} className="divLink" to='/faq' activeClassName="active">
               <div className="nav">FAQ</div>
             </NavLink>
-            <NavLink className="divLink LinkLast" to='/bag' activeClassName="active">
+            <NavLink onClick={toggleMenu} className="divLink LinkLast" to='/bag' activeClassName="active">
               <div className="nav">BAG (0)</div>
             </NavLink>
           </div>
-
         )}
       </div>
     </div >

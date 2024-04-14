@@ -64,3 +64,8 @@
 .active .nav{
     color: var(--color1) ;
 }
+
+
+.DragHandleIcon {
+    cursor: pointer;
+}
