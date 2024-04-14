@@ -8,24 +8,18 @@ function Navbar() {
   const [menuText, setMenuText] = useState('Menu'); 
 
   const toggleMenu = () => {
-    if (window.innerWidth < 767) {
-      setIsOpen(!isOpen);
-      setMenuText(isOpen ? 'Menu' : 'Close'); 
-    }
+    setIsOpen(!isOpen);
+    setMenuText(isOpen ? 'Menu' : 'Close'); 
   };
   
-
   useEffect(() => {
     const handleResize = () => {
       setIsOpen(window.innerWidth >= 767);
-      setMenuText(window.innerWidth >= 767 ? 'Menu' : 'Close'); 
     };
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
-
   return (
     <div>
       <div className="navbarSection">
